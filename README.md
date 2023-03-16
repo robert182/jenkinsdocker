@@ -33,4 +33,3 @@ docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 #access the jenkins site
 
 externalipaddress:8080
-
