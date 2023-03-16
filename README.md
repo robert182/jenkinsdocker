@@ -1,9 +1,11 @@
 Installation
 
 #Build the Jenkins BlueOcean Docker Image
+
 docker build -t myjenkins-blueocean:2.332.3-1 .
 
-#Create the network 'jenkins'
+#Create bridge network
+
 docker network create jenkins
 
 #Run the Container
@@ -17,8 +19,10 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
   myjenkins-blueocean:2.332.3-1
 
 #Get the password
+
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 
 #access the jenkins site
+
 externalipaddress:8080
 
