@@ -1,5 +1,13 @@
 Installation
 
+#Clone the repository
+
+git clone https://github.com/robert182/jenkinsdocker.git
+
+#go to the folder
+
+cd jenkinsdocker
+
 #Build the Jenkins BlueOcean Docker Image
 
 docker build -t myjenkins-blueocean:2.332.3-1 .
